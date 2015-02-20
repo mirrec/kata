@@ -1,27 +1,24 @@
 class FizzBuzz
-  attr_reader :displayer
 
-  def initialize(displayer = Kernel)
-    @displayer = displayer
-  end
+  def fizz_buzz(number)
+    return "fizzbuzz" if number % 15 == 0
 
-  def print_up_to(number)
-    1.upto(number) do |n|
-      if n % 15 == 0
-        display "fizzbuzz"
-      elsif n % 3 == 0
-        display "fizz"
-      elsif n % 5 == 0
-        display "buzz"
-      else
-        display n
-      end
+    if number % 3 == 0
+      "fizz"
+    elsif number % 5 == 0
+      "buzz"
+    else
+      number
     end
   end
 
-  private
+  def fizz_buzz_upto(number)
+    1.upto(number).map do |number|
+      "#{fizz_buzz(number)}\n"
+    end.join
+  end
 
-  def display(string)
-    displayer.puts(string)
+  def print_upto(number)
+    puts fizz_buzz_upto(number)
   end
 end
