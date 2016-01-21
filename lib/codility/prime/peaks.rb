@@ -1,3 +1,4 @@
+# https://codility.com/media/train/solution-flags.pdf
 module Codility
   module Prime
     module Peaks
