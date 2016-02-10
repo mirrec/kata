@@ -3,6 +3,7 @@ module Codility
     module TreeHeight
       Tree = Struct.new(:x, :l, :r)
 
+      # fasted solution
       def solution(a)
         depth = -1
 
@@ -26,6 +27,13 @@ module Codility
         end
 
         depth
+      end
+
+      # simplest solution with O(n), but almost 2x slower than solution above
+      def recursive_solution(a)
+        return -1 if a == nil
+
+        [recursive_solution(a.l), recursive_solution(a.r)].max + 1
       end
     end
   end
