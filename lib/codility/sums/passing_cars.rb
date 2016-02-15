@@ -1,3 +1,4 @@
+# https://codility.com/programmers/task/passing_cars/
 module Codility
   module Sums
     module PassingCars
@@ -5,6 +6,7 @@ module Codility
         prefix_sums[to + 1] - prefix_sums[from]
       end
 
+      # O(n)
       def solution(a)
         sum = a.inject(0) { |sum, element| sum + element }
         count = 0
@@ -23,6 +25,7 @@ module Codility
         count
       end
 
+      # O(n)
       def fast_solution(a)
         prefix_sums = [0] * (a.length + 1)
 
@@ -45,6 +48,7 @@ module Codility
         count
       end
 
+      # O(n^2)
       def correct_solution(a)
         count = 0
 

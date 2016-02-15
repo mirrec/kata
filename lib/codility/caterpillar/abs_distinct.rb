@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/abs_distinct/
 module Codility
   module Caterpillar
     module AbsDistinct
+      # O(n)
       def solution(a)
         distinct = 0
 
@@ -43,6 +45,7 @@ module Codility
         distinct
       end
 
+      # O(n)
       def solution_with_hash(a)
         numbers = {}
         a.each do |number|

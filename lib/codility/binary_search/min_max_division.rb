@@ -1,7 +1,9 @@
+# https://codility.com/programmers/task/min_max_division/
 # solution from https://github.com/mrhead/codility/blob/master/min_max_division.rb
 module Codility
   module BinarySearch
     module MinMaxDivision
+      # n*log(n)
       def solution(k, m, a)
         array_sum = 0
         maximum_element = -1

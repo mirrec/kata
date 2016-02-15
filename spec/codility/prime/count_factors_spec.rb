@@ -4,9 +4,9 @@ require 'codility/prime/count_factors'
 RSpec.describe Codility::Prime::CountFactors do
   include Codility::Prime::CountFactors
 
-  it 'works' do
+  it 'returns the number of its factors' do
     n = 24
-    expect(solution(n)).to eq(8)
+    expect(solution(n)).to eq(8) # factors: 1, 2, 3, 4, 6, 8, 12, 24
   end
 
   it 'works for 1' do

@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/count_non_divisible/
 module Codility
   module Sieve
     module CountNotDivisable
+      # probably O(N*log(N)
       def solution(a)
         number_of_counts = count_occurrence(a)
         dividers = count_dividers(a.max, number_of_counts)

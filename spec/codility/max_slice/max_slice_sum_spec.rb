@@ -4,7 +4,7 @@ require 'codility/max_slice/max_slice_sum'
 RSpec.describe Codility::MaxSlice::MaxSliceSum do
   include Codility::MaxSlice::MaxSliceSum
 
-  it 'works' do
+  it 'returns the maximum sum of any slice of an array' do
     a = [3,2,-6,4,0]
     expect(solution(a)).to eq(5)
   end

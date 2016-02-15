@@ -4,7 +4,7 @@ require 'codility/euclidean/chocolates_by_numbers'
 RSpec.describe Codility::Euclidean::ChocolatesByNumbers do
   include Codility::Euclidean::ChocolatesByNumbers
 
-  it 'works example' do
+  it 'returns the number of chocolates that you will eat' do
     expect(solution(10, 4)).to eq(5)
   end
 

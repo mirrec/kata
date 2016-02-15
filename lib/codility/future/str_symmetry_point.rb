@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/str_symmetry_point/
 module Codility
   module Future
     module StrSymmetryPoint
+      # O(s.length)
       def solution(s)
         return -1 if s.length == 0
 

@@ -29,7 +29,7 @@ RSpec.describe Codility::Future::ArrayInversionCount do
   end
 
   it 'returns -1 if results > 1_000_000_000' do
-    a = 20_000.downto(1).to_a
+    a = 45_000.downto(1).to_a
     expect(solution(a)).to eq(-1)
   end
 

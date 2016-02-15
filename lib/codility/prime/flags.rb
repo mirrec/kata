@@ -1,4 +1,5 @@
-# https://codility.com/media/train/solution-flags.pdf
+# https://codility.com/programmers/task/flags/
+# solution by: https://codility.com/media/train/solution-flags.pdf
 module Codility
   module Prime
     module Flags
@@ -44,6 +45,7 @@ module Codility
         next_peak
       end
 
+      # probably  O(n)
       def solution(a)
         # [1, 2, 3] 1 => 3
         # [1, 2,3, 4,5] 2 => 5

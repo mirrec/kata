@@ -1,8 +1,10 @@
 module Codility
   module CountingElements
     module Lesson
-      def counting(a)
-        b = [0] * (a.length + 1)
+      # O(n + m)
+      def counting(a, m = nil)
+        m ||= a.length
+        b = [0] * (m + 1)
 
         a.each do |element|
           b[element] += 1
@@ -11,6 +13,7 @@ module Codility
         b
       end
 
+      # O(n^2)
       def swap_of_elements(a, b)
         a_sum = a.inject(0) { |sum, number| sum + number }
         b_sum = b.inject(0) { |sum, number| sum + number }

@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/odd_occurrences_in_array/
 module Codility
   module Arrays
     module OddOccurrencesInArray
+      # O(n)
       def solution(a)
         once = {}
 

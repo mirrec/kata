@@ -1,3 +1,4 @@
+# https://codility.com/programmers/task/chocolates_by_numbers/
 module Codility
   module Euclidean
     module ChocolatesByNumbers
@@ -10,6 +11,7 @@ module Codility
         end
       end
 
+      # O(log(n+m))
       def solution(n, m)
         result = gcd(n, m)
         if result == n || result == m

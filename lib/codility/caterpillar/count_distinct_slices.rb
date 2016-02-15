@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/count_distinct_slices/
 module Codility
   module Caterpillar
     module CountDistinctSlices
+      # O(n)
       def solution(m, a)
         count = 0
         slice = []

@@ -1,10 +1,13 @@
+# https://codility.com/programmers/task/count_div/
 module Codility
   module Sums
     module CountDiv
+      # O(n)
       def correct_solution(a, b, k)
         (a..b).select { |element| element % k == 0 }.count
       end
 
+      # O(1)
       def solution(a, b, k)
         diff_a = a % k
         diff_b = b % k

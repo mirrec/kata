@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/nesting/
 module Codility
   module Stacks
     module Nesting
+      # O(n)
       def solution(s)
         stack = 0
 

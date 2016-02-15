@@ -1,3 +1,4 @@
+# https://codility.com/programmers/task/array_inversion_count/
 # Idea behind this solution is:
 # When are going through the array in reverse order, all we have to know for given element is how many less elements
 # in the array we have iterated over so far. It is quite easy to answer this question when we have sorted array.

@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/max_profit/
 module Codility
   module MaxSlice
     module MaxProfit
+      # O(n)
       def solution(a)
         return 0 if a.length < 2
 

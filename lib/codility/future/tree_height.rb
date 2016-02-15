@@ -1,9 +1,11 @@
+# https://codility.com/programmers/task/tree_height/
 module Codility
   module Future
     module TreeHeight
       Tree = Struct.new(:x, :l, :r)
 
-      # fasted solution
+      # fasted solution in ruby
+      # O(n)
       def solution(a)
         depth = -1
 

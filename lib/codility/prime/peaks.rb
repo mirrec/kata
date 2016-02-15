@@ -1,4 +1,4 @@
-# https://codility.com/media/train/solution-flags.pdf
+# https://codility.com/programmers/task/peaks/
 module Codility
   module Prime
     module Peaks
@@ -44,6 +44,7 @@ module Codility
         next_peak
       end
 
+      # probably O(n*log(log(n)))
       def solution(a)
         peaks = peak_positions(a)
         next_peak = next_peak_position(peaks)

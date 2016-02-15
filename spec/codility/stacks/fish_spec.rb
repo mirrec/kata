@@ -4,20 +4,20 @@ require 'codility/stacks/fish'
 RSpec.describe Codility::Stacks::Fish do
   include Codility::Stacks::Fish
 
-  it 'works' do
+  it 'returns the number of fish that will stay alive' do
     a = [4,3,2,1,5]
     b = [0,1,0,0,0]
 
     expect(solution(a, b)).to eq(2)
   end
 
-  it 'all are alive when there is no interaction' do
+  it 'returns all fish number when there is no interaction' do
     a = [1,2,3,4]
     b = [0,0,0,0]
     expect(solution(a, b)).to eq(4)
   end
 
-  it 'all are alive when there is no interaction' do
+  it 'returns all fish number when there is no interaction' do
     a = [1,2,3,4]
     b = [1,1,1,1]
     expect(solution(a, b)).to eq(4)

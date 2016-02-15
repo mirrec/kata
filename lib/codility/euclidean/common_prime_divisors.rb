@@ -1,3 +1,5 @@
+# https://codility.com/programmers/task/common_prime_divisors/
+# solution: http://www.martinkysel.com/codility-commonprimedivisors-solution/
 module Codility
   module Euclidean
     module CommonPrimeDivisors
@@ -23,6 +25,7 @@ module Codility
         number == 1
       end
 
+      # O(Z*log(max(a) + max(b))^2)
       def solution(a, b)
         same_primes = 0
 

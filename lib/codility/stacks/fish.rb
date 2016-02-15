@@ -1,3 +1,4 @@
+# https://codility.com/programmers/task/fish/
 module Codility
   module Stacks
     module Fish
@@ -32,6 +33,7 @@ module Codility
         end
       end
 
+      # O(n)
       def solution(a, b)
         stack = CustomStuck.new
 

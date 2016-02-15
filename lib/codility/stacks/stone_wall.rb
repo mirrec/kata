@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/stone_wall/
 module Codility
   module Stacks
     module StoneWall
+      # O(n)
       def solution(h)
         stack = []
 

@@ -4,7 +4,7 @@ require 'codility/sieve/count_semiprimes'
 RSpec.describe Codility::Sieve::CountSemiprimes do
   include Codility::Sieve::CountSemiprimes
 
-  it 'works' do
+  it 'returns an array consisting of M elements specifying the consecutive answers to all the queries' do
     p = [1,   4, 16, 4]
     q = [26, 10, 20, 6]
 

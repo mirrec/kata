@@ -1,3 +1,4 @@
+# https://codility.com/programmers/task/count_semiprimes/
 module Codility
   module Sieve
     module CountSemiprimes
@@ -37,6 +38,7 @@ module Codility
         end
       end
 
+      # probably O(N*log(log(N))+M)
       def solution(n, p, q)
         semi = fast_semiprimes(n)
         semi_prefix = [0] * (semi.length + 1)

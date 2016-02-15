@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/max_product_of_three/
 module Codility
   module Sorting
     module MaxProductOfThree
+      # O(n * log(n))
       def solution(a)
         sorted = a.sort
 

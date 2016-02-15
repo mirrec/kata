@@ -4,7 +4,7 @@ require 'codility/counting_elements/permutation_check'
 RSpec.describe Codility::CountingElements::PermutationCheck do
   include Codility::CountingElements::PermutationCheck
 
-  it 'returns 1 if array is permutation' do
+  it 'returns 1 if array is permutation, which means that it contains each value from 1..N only once' do
     expect(dam_smart_solution([4,1,3,2])).to eq(1)
   end
 

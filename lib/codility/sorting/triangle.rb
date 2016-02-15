@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/triangle/
 module Codility
   module Sorting
     module Triangle
+      # O(n * log(n))
       def solution(a)
         sorted = a.select{ |element| element > 0 }.sort
 

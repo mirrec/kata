@@ -1,3 +1,4 @@
+# https://codility.com/programmers/task/ladder/
 module Codility
   module Fibonacci
     module Ladder
@@ -13,6 +14,7 @@ module Codility
       end
 
 
+      # O(size)
       def solution(a, b, size = nil)
         size ||= a.length + 1
         fibs = fib_numbers(size)

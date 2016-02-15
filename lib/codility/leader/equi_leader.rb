@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/equi_leader/
 module Codility
   module Leader
     module EquiLeader
+      # O(n)
       def solution(a)
         value = nil
         size = 0

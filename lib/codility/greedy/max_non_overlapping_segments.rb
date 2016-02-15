@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/max_nonoverlapping_segments/
 module Codility
   module Greedy
     module MaxNonOverlappingSegments
+      # O(n)
       def solution(a, b)
         return 0 if a.length == 0
 

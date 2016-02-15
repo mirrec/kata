@@ -4,7 +4,7 @@ require 'codility/prime/flags'
 RSpec.describe Codility::Prime::Flags do
   include Codility::Prime::Flags
 
-  it 'works' do
+  it 'returns the maximum number of flags that can be set on the peaks of the array.' do
     a = [1,5,3,4,3,4,1,2,3,4,6,2]
     expect(solution(a)).to eq(3)
   end

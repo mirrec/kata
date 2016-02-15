@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/tie_ropes/
 module Codility
   module Greedy
     module TieRopes
+      # O(n)
       def solution(k, a)
         part_sum = 0
         ropes = 0

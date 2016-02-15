@@ -1,7 +1,9 @@
+# https://codility.com/programmers/task/perm_check/
 module Codility
   module CountingElements
     module PermutationCheck
 
+      # O(n)
       def solution(a)
         uniq_numbers = {}
         max = 0
@@ -31,6 +33,7 @@ module Codility
         expected_sum == sum ? 1 : 0
       end
 
+      # O(n)
       require 'set'
       def dam_smart_solution(a)
         set = Set.new(a)

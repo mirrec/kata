@@ -4,7 +4,7 @@ require 'codility/prime/peaks'
 RSpec.describe Codility::Prime::Peaks do
   include Codility::Prime::Peaks
 
-  it 'works' do
+  it 'returns the maximum number of blocks into which A can be divided, so that in each group we have at least one peak' do
     a = [1,2,3,4,3,4,1,2,3,4,6,2]
     expect(solution(a)).to eq(3)
   end

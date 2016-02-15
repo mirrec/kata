@@ -1,12 +1,11 @@
 require 'spec_helper'
 require 'codility/future/tree_height'
-require 'benchmark'
 
 RSpec.describe Codility::Future::TreeHeight do
   include Codility::Future::TreeHeight
   Tree = Codility::Future::TreeHeight::Tree
 
-  it 'works' do
+  it 'returns height of a binary tree' do
     # (5, (3, (20, None, None), (21, None, None)), (10, (1, None, None), None))
     tree = Tree.new(5,
              Tree.new(3,
@@ -24,7 +23,7 @@ RSpec.describe Codility::Future::TreeHeight do
     expect(solution(nil)).to eq(-1)
   end
 
-  it 'works for huge input' do
+  it 'returns correct result for huge input' do
     left_node = Tree.new(1,nil,nil)
     right_node = Tree.new(1,nil,nil)
 
@@ -41,7 +40,7 @@ RSpec.describe Codility::Future::TreeHeight do
     expect(solution(root_node)).to eq(21)
   end
 
-  it 'works for deepest tree' do
+  it 'works with deepest possible tree' do
     left_node = Tree.new(1,nil,nil)
     500.times do |n|
       left_node = Tree.new(n + 2, left_node.dup, nil)

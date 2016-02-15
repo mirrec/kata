@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/genomic_range_query/
 module Codility
   module Sums
     module GenomicRangeQuery
+      # O(n + m)
       def solution(s, p, q)
         map = {
             'A' => 1,
@@ -36,7 +38,7 @@ module Codility
         results
       end
 
-
+      # O(n*m)
       def correct_solution(s, p, q)
         map = {
             'A' => 1,

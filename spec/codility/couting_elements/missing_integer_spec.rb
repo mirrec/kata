@@ -4,7 +4,7 @@ require 'codility/counting_elements/missing_integer'
 RSpec.describe Codility::CountingElements::MissingInteger do
   include Codility::CountingElements::MissingInteger
 
-  it 'return minimal positive number that is missing in values' do
+  it 'returns the minimal positive integer (greater than 0) that does not occur in A' do
     a = []
     a[0] = 1
     a[1] = 3

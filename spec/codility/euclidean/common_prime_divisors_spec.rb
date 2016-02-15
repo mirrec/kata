@@ -4,7 +4,7 @@ require 'codility/euclidean/common_prime_divisors'
 RSpec.describe Codility::Euclidean::CommonPrimeDivisors do
   include Codility::Euclidean::CommonPrimeDivisors
 
-  it 'works' do
+  it 'returns the number of positions K for which the prime divisors of A[K] and B[K] are exactly the same' do
     # 15 = 5x3
     # 75 = 5x5x3
     # 1, 1

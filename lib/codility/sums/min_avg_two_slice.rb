@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/min_avg_two_slice/
 module Codility
   module Sums
     module MinAvgTwoSlice
+      # O(n)
       def solution(a)
         prefix_sum = [0] * (a.length + 1)
 

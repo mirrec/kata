@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/distinct/
 module Codility
   module Sorting
     module Distinct
+      # O(n*log(n))
       def solution(a)
         sorted = a.sort
 
@@ -16,8 +18,8 @@ module Codility
         distinct
       end
 
+      # O(n)
       require 'set'
-
       def smart_solution(a)
         Set.new(a).count
       end

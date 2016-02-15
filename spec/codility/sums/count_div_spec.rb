@@ -4,7 +4,7 @@ require 'codility/sums/count_div'
 RSpec.describe Codility::Sums::CountDiv do
   include Codility::Sums::CountDiv
 
-  it 'works for given example' do
+  it 'returns the number of integers within the range [A..B] that are divisible by K' do
     expect(solution(6, 11, 2)).to eq(3)
   end
 

@@ -1,3 +1,5 @@
+# https://codility.com/programmers/task/fib_frog/
+# https://codesays.com/2014/solution-to-fib-frog-by-codility/
 # I tried really hard to improve performance, but I am not able to make this faster.
 # I am getting only 33% in performance
 module Codility
@@ -18,6 +20,7 @@ module Codility
         results
       end
 
+      # O(N*log(N))
       def solution(a)
         fib_numbers = {}
         fibs = fib_numbers_to(a.length + 2)

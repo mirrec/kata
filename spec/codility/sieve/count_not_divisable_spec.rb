@@ -4,7 +4,7 @@ require 'codility/sieve/count_not_divisable'
 RSpec.describe Codility::Sieve::CountNotDivisable do
   include Codility::Sieve::CountNotDivisable
 
-  it 'works' do
+  it 'returns a sequence of integers representing the amount of non-divisors' do
     a = [3,1,2,3,6]
     expect(solution(a)).to eq([2, 4, 3, 2, 0])
   end

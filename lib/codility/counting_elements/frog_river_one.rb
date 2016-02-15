@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/frog_river_one/
 module Codility
   module CountingElements
     module FrogRiverOne
+      # O(n)
       def solution(x, a)
         steps = {}
         max = 0
@@ -22,6 +24,7 @@ module Codility
         end
       end
 
+      # O(x * n)
       def correct_solution(x, a)
         steps = []
 

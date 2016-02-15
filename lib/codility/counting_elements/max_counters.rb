@@ -1,3 +1,4 @@
+# https://codility.com/programmers/task/max_counters/
 module Codility
   module CountingElements
     module MaxCounters
@@ -27,6 +28,7 @@ module Codility
         results.values
       end
 
+      # O(n + m)
       def solution(n, a)
         results = {}
         # n

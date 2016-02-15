@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/min_abs_sum_of_two/
 module Codility
   module Caterpillar
     module MinAbsSumOfTwo
+      # O(n * log(n))
       def solution(a)
         sorted = a.sort
         # all numbers are positive

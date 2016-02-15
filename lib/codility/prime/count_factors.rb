@@ -1,7 +1,9 @@
+# https://codility.com/programmers/task/count_factors/
 module Codility
   module Prime
     module CountFactors
 
+      # O(sqrt(n))
       def solution(n)
         i = 1
 

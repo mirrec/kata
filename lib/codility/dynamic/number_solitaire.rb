@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/number_solitaire/
 module Codility
   module Dynamic
     module NumberSolitaire
+      # O(n)
       def solution(a)
         results = [a[0]] + [0] * (a.length - 1)
 

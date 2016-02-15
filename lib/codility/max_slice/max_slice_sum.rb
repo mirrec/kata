@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/max_slice_sum/
 module Codility
   module MaxSlice
     module MaxSliceSum
+      # O(n)
       def solution(a)
         max_sum_in_position = [a[0]]
 

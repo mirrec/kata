@@ -1,7 +1,9 @@
+# https://codility.com/programmers/task/number_of_disc_intersections/
 module Codility
   module Sorting
     module NumberOfDiscIntersections
 
+      # O(n * log(n))
       def solution(a)
         line_map = []
 
@@ -36,6 +38,7 @@ module Codility
         intersections
       end
 
+      # O(n^2)
       def correct_solution(a)
         lines = a.each_with_index.map do |length, middle|
           [middle - length, middle + length]

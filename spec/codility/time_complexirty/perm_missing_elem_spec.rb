@@ -4,7 +4,7 @@ require 'codility/time_complexity/perm_missing_elem'
 RSpec.describe Codility::TimeComplexity::PermMissingElem do
   include Codility::TimeComplexity::PermMissingElem
 
-  it 'returns missing element in an array' do
+  it 'returns missing element in an array that contains integers in the range [1..(N + 1)]' do
     expect(solution([2,3,1,5])).to eq(4)
   end
 

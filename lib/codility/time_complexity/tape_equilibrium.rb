@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/tape_equilibrium/
 module Codility
   module TimeComplexity
     module TapeEquilibrium
+      # O(n)
       def solution(a)
         x = 0
         sums_left = []

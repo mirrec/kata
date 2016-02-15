@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/dominator/
 module Codility
   module Leader
     module Dominator
+      # O(n)
       def solution(a)
         value = nil
         size = 0

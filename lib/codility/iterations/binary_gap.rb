@@ -1,7 +1,9 @@
+# https://codility.com/programmers/task/binary_gap/
 module Codility
   module Iterations
     module BinaryGap
 
+      # O(log n)
       def solution(n)
         max = 0
         current_max = 0

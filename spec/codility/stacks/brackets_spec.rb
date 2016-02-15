@@ -4,7 +4,7 @@ require 'codility/stacks/brackets'
 RSpec.describe Codility::Stacks::Brackets do
   include Codility::Stacks::Brackets
 
-  it '1 if nested ok' do
+  it '1 if nesting ok' do
     s = '{[()()]}'
     expect(solution(s)).to eq(1)
   end
@@ -14,7 +14,7 @@ RSpec.describe Codility::Stacks::Brackets do
     expect(solution(s)).to eq(0)
   end
 
-  it 'emptry string' do
+  it 'empty string' do
     s = ''
     expect(solution(s)).to eq(1)
   end

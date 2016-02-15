@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/min_perimeter_rectangle/
 module Codility
   module Prime
     module MinPerimeterRectangle
+      # O(sqrt(n))
       def solution(n)
         i = 1
 

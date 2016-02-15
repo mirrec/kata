@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/missing_integer/
 module Codility
   module CountingElements
     module MissingInteger
+      # O(n)
       def solution(a)
         max = 1
 
@@ -13,7 +15,7 @@ module Codility
         end
 
         if occurrence.count == max
-          return max +1
+          return max + 1
         end
 
         1.upto(max) do |element|

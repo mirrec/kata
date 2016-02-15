@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/count_triangles/
 module Codility
   module Caterpillar
     module CountTriangles
+      # O(n^2)
       def solution(a)
         sorted = a.sort
 
@@ -18,7 +20,8 @@ module Codility
         triangles
       end
 
-      def solution_n_square(a)
+      # O(n^3)
+      def solution_n_cubit(a)
 
         triangles = 0
         (0..a.length - 3).each do |x|

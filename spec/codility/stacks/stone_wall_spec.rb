@@ -4,7 +4,7 @@ require 'codility/stacks/stone_wall'
 RSpec.describe Codility::Stacks::StoneWall do
   include Codility::Stacks::StoneWall
 
-  it 'works' do
+  it 'returns the minimum number of blocks needed to build it' do
     h = [8,8,5,7,9,8,7,4,8]
     expect(solution(h)).to eq(7)
   end

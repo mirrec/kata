@@ -1,6 +1,8 @@
+# https://codility.com/programmers/task/brackets/
 module Codility
   module Stacks
     module Brackets
+      # O(n)
       def solution(a)
         stack = []
 

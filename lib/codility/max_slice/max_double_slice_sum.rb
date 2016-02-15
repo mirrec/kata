@@ -1,3 +1,4 @@
+# https://codility.com/programmers/task/max_double_slice_sum/
 module Codility
   module MaxSlice
     module MaxDoubleSliceSum

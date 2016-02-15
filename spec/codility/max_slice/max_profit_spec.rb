@@ -4,7 +4,7 @@ require 'codility/max_slice/max_profit'
 RSpec.describe Codility::MaxSlice::MaxProfit do
   include Codility::MaxSlice::MaxProfit
 
-  it 'works' do
+  it 'returns the maximum possible profit' do
     a = []
     a[0] = 23171
     a[1] = 21011
